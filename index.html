@@ -87,3 +87,158 @@
       margin-top: 0;
     }
     .poll-options {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+    .poll-options li {
+      padding: 0.7rem 1rem;
+      margin-bottom: 0.8rem;
+      background: #ffe3b3;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      border: 1px solid #f8c97a;
+      transition: background 0.2s;
+    }
+    .poll-options li:hover {
+      background: #ffd689;
+    }
+    .poll-note {
+      font-size: 0.97rem;
+      color: #a35d00;
+      margin-top: 1rem;
+    }
+    .section {
+      margin-bottom: 2.5rem;
+    }
+    .contact-section {
+      background: #e2f7e7;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(20,110,65,0.08);
+      margin-bottom: 2.5rem;
+    }
+    .contact-section h2 {
+      color: #188c3c;
+      margin-top: 0;
+    }
+    .contact-email {
+      font-size: 1.05rem;
+      color: #276fad;
+      word-break: break-all;
+    }
+    footer {
+      text-align: center;
+      margin: 2rem 0 1rem 0;
+      color: #888;
+      font-size: 0.98rem;
+    }
+    /* Uncomment below to activate upcoming talks section */
+    /*
+    .upcoming-section {
+      margin-bottom: 2.5rem;
+    }
+    */
+  </style>
+  <script>
+    // Simple poll interaction (client side only, no backend)
+    function vote(option) {
+      alert("Thanks for voting for: " + option + "!\n(Results are not tracked, but your enthusiasm is appreciated.)");
+    }
+    // Uncomment the function below to activate upcoming talks section display
+    /*
+    function showUpcomingTalks() {
+      document.getElementById('upcoming-talks').style.display = 'block';
+    }
+    */
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Tucson Drug Club</h1>
+    <p>We talk about brain cells. And drugs.</p>
+  </header>
+  <div class="container">
+    <div class="section">
+      <h2>Previous Talks</h2>
+      <ul class="talk-list">
+        <li>
+          <span class="talk-title">Current Investigative Strategies in Astrocyte Neuropharmacology</span>
+          <div class="talk-details">
+            Speaker: Dr. Ingrid Peterson<br>
+            Academic Position: Post-doctorate Researcher, University of Arizona Department of Medical Pharmacology<br>
+            Date and Time: August 18, 2025, 4:00 PM (Arizona Time)
+          </div>
+          <div class="talk-zoom">
+            Location: Virtual (Zoom)
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="poll-section">
+      <h2>Vote for Our Next Talk Topic!</h2>
+      <ul class="poll-options">
+        <li onclick="vote('Microdosing: Why Take a Little When You Can Take a Lot?')">Microdosing: Why Take a Little When You Can Take a Lot?</li>
+        <li onclick="vote('The Science of Napping: Is It Better With Edibles?')">The Science of Napping: Is It Better With Edibles?</li>
+        <li onclick="vote('Pharmacology of Munchies: A Practical Exploration')">Pharmacology of Munchies: A Practical Exploration</li>
+        <li onclick="vote('Neural Circuitry and Psychoactive Substances: Mechanisms and Implications')">Neural Circuitry and Psychoactive Substances: Mechanisms and Implications</li>
+      </ul>
+      <div class="poll-note">
+        <strong>Note:</strong> This poll is just for fun! Actual topics may be slightly more scientific (but not much).
+      </div>
+    </div>
+    <!--
+    <div class="section upcoming-section" id="upcoming-talks" style="display:none;">
+      <h2>Upcoming Academic Talks</h2>
+      <ul class="talk-list">
+        <li>
+          <span class="talk-title">Advances in Pharmacology</span>
+          <div class="talk-details">
+            Speaker: Dr. Jane Smith<br>
+            Academic Position: Professor of Pharmacology<br>
+            Date and Time: September 8, 2025, 2:00 PM (Arizona Time)
+          </div>
+          <div class="talk-zoom">
+            Location: Virtual (Zoom link to be posted)
+          </div>
+        </li>
+        <li>
+          <span class="talk-title">Drug Discovery and Development</span>
+          <div class="talk-details">
+            Speaker: Prof. Alan Tsai<br>
+            Academic Position: Associate Professor, Medicinal Chemistry<br>
+            Date and Time: September 15, 2025, 3:00 PM (Arizona Time)
+          </div>
+          <div class="talk-zoom">
+            Location: Virtual (Zoom link to be posted)
+          </div>
+        </li>
+        <li>
+          <span class="talk-title">Ethics in Prescription Drug Research</span>
+          <div class="talk-details">
+            Speaker: Dr. Maria Lopez<br>
+            Academic Position: Assistant Professor, Bioethics<br>
+            Date and Time: September 29, 2025, 5:00 PM (Arizona Time)
+          </div>
+          <div class="talk-zoom">
+            Location: Virtual (Zoom link to be posted)
+          </div>
+        </li>
+      </ul>
+      <p>Check back for updates and new talks!</p>
+    </div>
+    -->
+    <div class="contact-section">
+      <h2>Contact Us</h2>
+      <p>Want to know more, get involved, or just say hi? Drop us an email:</p>
+      <div class="contact-email">
+        <a href="mailto:tucsondrugclub@gmail.com">tucsondrugclub@gmail.com</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 Tucson Drug Club | Academic Community
+  </footer>
+</body>
+</html>
