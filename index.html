@@ -134,20 +134,15 @@
       color: #888;
       font-size: 0.98rem;
     }
-    /* Uncomment below to activate upcoming talks section */
-    
     .upcoming-section {
       margin-bottom: 2.5rem;
     }
-    
   </style>
   <script>
     // Simple poll interaction (client side only, no backend)
     function vote(option) {
       alert("Thanks for voting for: " + option + "!\n(Results are not tracked, but your enthusiasm is appreciated.)");
     }
-    // Uncomment the function below to activate upcoming talks section display
-    
     function showUpcomingTalks() {
       document.getElementById('upcoming-talks').style.display = 'block';
     }
@@ -186,18 +181,6 @@
           </div>
         </li>
       </ul>
-    </div>
-    <div class="poll-section">
-      <h2>Vote for Our Next Talk Topic!</h2>
-      <ul class="poll-options">
-        <li onclick="vote('Microdosing: Why Take a Little When You Can Take a Lot?')">Microdosing: Why Take a Little When You Can Take a Lot?</li>
-        <li onclick="vote('The Science of Napping: Is It Better With Edibles?')">The Science of Napping: Is It Better With Edibles?</li>
-        <li onclick="vote('Pharmacology of Munchies: A Practical Exploration')">Pharmacology of Munchies: A Practical Exploration</li>
-        <li onclick="vote('Neural Circuitry and Psychoactive Substances: Mechanisms and Implications')">Neural Circuitry and Psychoactive Substances: Mechanisms and Implications</li>
-      </ul>
-      <div class="poll-note">
-        <strong>Note:</strong> This poll is just for fun! Actual topics may be slightly more scientific (but not much).
-      </div>
     </div>
     <div class="section upcoming-section" id="upcoming-talks" style="display:none;">
       <h2>Upcoming Academic Talks</h2>
@@ -238,6 +221,20 @@
       </ul>
       <p>Check back for updates and new talks!</p>
     </div>
+    
+    <div class="poll-section">
+      <h2>Vote for Our Next Talk Topic!</h2>
+      <ul class="poll-options">
+        <li onclick="vote('Microdosing: Why Take a Little When You Can Take a Lot?')">Microdosing: Why Take a Little When You Can Take a Lot?</li>
+        <li onclick="vote('The Science of Napping: Is It Better With Edibles?')">The Science of Napping: Is It Better With Edibles?</li>
+        <li onclick="vote('Pharmacology of Munchies: A Practical Exploration')">Pharmacology of Munchies: A Practical Exploration</li>
+        <li onclick="vote('Neural Circuitry and Psychoactive Substances: Mechanisms and Implications')">Neural Circuitry and Psychoactive Substances: Mechanisms and Implications</li>
+      </ul>
+      <div class="poll-note">
+        <strong>Note:</strong> This poll is just for fun! Actual topics may be slightly more scientific (but not much).
+      </div>
+    </div>
+    
     <div class="contact-section">
       <h2>Contact Us</h2>
       <p>Want to know more, get involved, or just say hi? Drop us an email:</p>
