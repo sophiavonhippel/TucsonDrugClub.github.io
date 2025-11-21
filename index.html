@@ -143,10 +143,6 @@
     function vote(option) {
       alert("Thanks for voting for: " + option + "!\n(Results are not tracked, but your enthusiasm is appreciated.)");
     }
-    function showUpcomingTalks() {
-      document.getElementById('upcoming-talks').style.display = 'block';
-    }
-    
   </script>
 </head>
 <body>
@@ -155,8 +151,8 @@
     <p>We talk about brain cells. And drugs.</p>
   </header>
   <div class="container">
-    <div class="section upcoming-section" id="upcoming-talks" style="display:none;">
-      <h2>Upcoming Academic Talks</h2>
+    <div class="section upcoming-section" id="upcoming-talks">
+      <h2>Upcoming Talks</h2>
       <ul class="talk-list">
         <li>
           <span class="talk-title">To Be Announced</span>
@@ -194,6 +190,7 @@
       </ul>
       <p>Check back for updates and new talks!</p>
     </div>
+
     <div class="section">
       <h2>Previous Talks</h2>
       <ul class="talk-list">
@@ -232,6 +229,7 @@
         </li>
       </ul>
     </div>
+    
     <div class="poll-section">
       <h2>Vote for Our Next Talk Topic!</h2>
       <ul class="poll-options">
